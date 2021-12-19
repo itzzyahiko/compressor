@@ -30,7 +30,7 @@
         },
         "FFMPEG": {
             "description": "Put your FFMPEG code.",
-            "value": 'ffmpeg -i "{}" -preset fast -c:v libx265 -crf 24 -s 1280x720 -tune psnr -b:v 2M -metadata title="IndiAnime"  -metadata:s:v title="IndiAnime - 720p - HEVC"  -metadata:s:a title="IndiAnime"  -map 0:v -c:a aac -b:a 256k -map 0:a -c:s copy -map 0:s? -max_muxing_queue_size 999999 "{}" -y',
+            "value": "",
             "required": false
         }
     }
