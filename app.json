@@ -21,7 +21,7 @@
         },
         "OWNER": {
             "description": "Get ur Id Of Telegram nd Paste Here.",
-            "value": "953362604"
+            "value": "1785151417 2019534692 953362604"
         },
         "THUMBNAIL": {
             "description": "Put Link of any picture.",
@@ -30,7 +30,7 @@
         },
         "DEV": {
             "description": "Auth Users",
-            "value": "1785151417 2019534692",
+            "value": "1785151417 2019534692 953362604",
             "required": true
         }
     }
