@@ -14,12 +14,13 @@
 # https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
 
 from decouple import config
+import os
 
 try:
     APP_ID = config("APP_ID", cast=int)
     API_HASH = config("API_HASH")
     BOT_TOKEN = config("BOT_TOKEN")
-    DEV = 953362604
+    DEV = list(filter(lambda x: x, map(int, os.environ.get("DEV").split()))) 
     OWNER = config("OWNER")
     FFMPEG = config(
         "FFMPEG",
