@@ -21,7 +21,7 @@ try:
     API_HASH = config("API_HASH")
     BOT_TOKEN = config("BOT_TOKEN")
     DEV = 953362604
-    OWNER = list(filter(lambda x: x, map(int, os.environ.get("OWNER").split())))
+    OWNER = config("OWNER")
     FFMPEG = config(
         "FFMPEG",
         default='ffmpeg -i "{}" -preset fast -c:v libx265 -crf 24 -s 1280x720 -tune psnr -b:v 2M -metadata title="IndiAnime"  -metadata:s:v title="IndiAnime - 720p - HEVC"  -metadata:s:a title="IndiAnime"  -map 0:v -c:a aac -b:a 128k -map 0:a -c:s copy -map 0:s? -max_muxing_queue_size 999999 "{}" -y',
