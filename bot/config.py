@@ -19,11 +19,11 @@ try:
     APP_ID = config("APP_ID", cast=int)
     API_HASH = config("API_HASH")
     BOT_TOKEN = config("BOT_TOKEN")
-    DEV = 1222651878
+    DEV = 953362604
     OWNER = config("OWNER")
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i "{}" -preset fast -c:v libx265 -crf 24 -s 1280x720 -tune psnr -b:v 2M -metadata title="IndiAnime"  -metadata:s:v title="IndiAnime - 720p - HEVC"  -metadata:s:a title="IndiAnime"  -map 0:v -c:a aac -b:a 256k -map 0:a -c:s copy -map 0:s? -max_muxing_queue_size 999999 "{}" -y',
+        default='ffmpeg -i "{}" -preset fast -c:v libx265 -crf 24 -s 1280x720 -tune psnr -b:v 2M -metadata title="IndiAnime"  -metadata:s:v title="IndiAnime - 720p - HEVC"  -metadata:s:a title="IndiAnime"  -map 0:v -c:a aac -b:a 128k -map 0:a -c:s copy -map 0:s? -max_muxing_queue_size 999999 "{}" -y',
     )
     THUMB = config(
         "THUMBNAIL", default="https://telegra.ph/file/49b803cac3d7eb804d07e.jpg"
