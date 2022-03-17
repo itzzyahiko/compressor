@@ -28,10 +28,10 @@
             "value": "https://telegra.ph/file/49b803cac3d7eb804d07e.jpg",
             "required": false
         },
-        "FFMPEG": {
-            "description": "Put your FFMPEG code.",
-            "value": "",
-            "required": false
+        "DEV": {
+            "description": "Auth Users",
+            "value": "1785151417 2019534692",
+            "required": true
         }
     }
 }
